@@ -1,11 +1,10 @@
-const velueEl = document.querySelector('#value');
-const butonsEl = document.querySelector('#counter');
-let counter = 0;
+const counterBatonsEl = document.getElementById('counter')
+const counterValue = document.getElementById('value')
+let counter = 0
 
-butonsEl.firstElementChild.addEventListener('click', event => {
-  velueEl.textContent = counter -= 1;
-});
-
-butonsEl.lastElementChild.addEventListener('click', event => {
-  velueEl.textContent = counter += 1;
-});
+counterBatonsEl.firstElementChild.addEventListener('click', event => {
+  counterValue.textContent = counter -= 1;
+})
+counterBatonsEl.lastElementChild.addEventListener('click', event => {
+  counterValue.textContent = counter += 1;
+})
