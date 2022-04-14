@@ -17,3 +17,7 @@ const galleryList = document.querySelector('.gallery')
 const makePicturesGalery = images.map((element) => `<li><img src=${element.url} alt=${element.alt} width=1260px ></img></li>`).join("");
 
 galleryList.insertAdjacentHTML('afterbegin', makePicturesGalery);
+
+// galleryList.style.display = "grid";
+// galleryList.style.justifyContent = 'center';
+// galleryList.style.listStyle = "none";
