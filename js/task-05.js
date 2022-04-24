@@ -1,5 +1,5 @@
-const inputText = document.querySelector("#name-input");
-const outputText = document.querySelector("#name-output");
+const inputText = document.getElementById("name-input");
+const outputText = document.getElementById("name-output");
 
 inputText.addEventListener('input', event => {
   if (inputText.value.length === 0) {
